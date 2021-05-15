@@ -1,0 +1,563 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type Path}" x:Key="1">
+        <Setter Property="Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF97FF25"/>
+                    <GradientStop Color="#FF0B1F14" Offset="1"/>
+                    <GradientStop Color="#FF4EDD3E" Offset="0.309"/>
+                    <GradientStop Color="#FF286F43" Offset="0.723"/>
+                    <GradientStop Color="#FF248C34" Offset="0.516"/>
+                    <GradientStop Color="#FF132F1E" Offset="0.883"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Data">
+            <Setter.Value>
+            <GeometryGroup>
+                <PathGeometry>
+                    <PathGeometry.Figures>
+                        <PathFigureCollection>
+                            <PathFigure IsClosed="true" StartPoint="50,50">
+                                <PathFigure.Segments>
+                                    <PathSegmentCollection>
+                                        <BezierSegment Point1="75,300" Point2="125,100" Point3="150,50"/>
+                                        <BezierSegment Point1="125,300" Point2="75,100"  Point3="50,50"/>
+                                    </PathSegmentCollection>
+                                </PathFigure.Segments>
+                            </PathFigure>
+                        </PathFigureCollection>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </GeometryGroup>
+                </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type WrapPanel}" x:Key="2">
+        <Setter Property="WrapPanel.Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0,0">
+                <GradientStop Color="#FFFAEE3B"/>
+                <GradientStop Color="#FFF4DD4E" Offset="0.133"/>
+                <GradientStop Color="#FFF3D72B" Offset="0.253"/>
+                <GradientStop Color="#FFD4B20E" Offset="0.38"/>
+                <GradientStop Color="#FFEBAA1F" Offset="0.521"/>
+                <GradientStop Color="#FFE87F04" Offset="0.649"/>
+                <GradientStop Color="#FFEB771E" Offset="0.763"/>
+                <GradientStop Color="#FFDD300A" Offset="0.992"/>
+                <GradientStop Color="#FFEE550C" Offset="0.88"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Ellipse}" x:Key="EpicEllipse">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Height" Value="55" />
+        <Setter Property="Width" Value="70" />
+        <Setter Property="Fill">
+            <Setter.Value>
+                <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                    <GradientStop Offset="0" Color="Green" />
+                    <GradientStop Offset="0.763" Color="Yellow" />
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type Ellipse}" x:Key="TopEllipse">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Height" Value="50" />
+        <Setter Property="Width" Value="50" />
+        <Setter Property="Fill">
+            <Setter.Value>
+                <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                    <GradientStop Offset="0" Color="Red" />
+                    <GradientStop Offset="0.763" Color="Pink" />
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type Ellipse}" x:Key="GoodEllipse">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Height" Value="65" />
+        <Setter Property="Width" Value="80" />
+        <Setter Property="Fill">
+            <Setter.Value>
+                <RadialGradientBrush RadiusX="0.1" RadiusY="0.1" SpreadMethod="Repeat">
+                    <GradientStop Offset="0" Color="Red" />
+                    <GradientStop Offset="0.763" Color="PaleGreen" />
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="3">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-156.3"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                    <GradientStop Color="#FFC00E0E" Offset="0.465"/>
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="4">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-118.696"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                    <GradientStop Color="#FFC00E0E" Offset="0.465"/>
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="5">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-189.388"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                    <GradientStop Color="#FFC00E0E" Offset="0.465"/>
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="6">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-156.3"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF420202"/>
+                    <GradientStop Color="#FFF76969" Offset="1"/>
+                    <GradientStop Color="#FFC00E0E" Offset="0.465"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="7">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-41.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF07306C"/>
+                    <GradientStop Color="#FF69F7EF" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="8">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-14.501"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF07306C"/>
+                    <GradientStop Color="#FF69F7EF" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="9">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-68.846"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF07306C"/>
+                    <GradientStop Color="#FF69F7EF" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Polygon}" x:Key="10">
+        <Setter Property="Polygon.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-41.017"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Polygon.Fill">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF07306C"/>
+                    <GradientStop Color="#FF69F7EF" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="11">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-184.671"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="12">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-155.374"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF990707"/>
+                    <GradientStop Color="#FFFC2A2A" Offset="1"/>
+                    <GradientStop Color="#FFB00808" Offset="0.263"/>
+                    <GradientStop Color="#FFDD0F0F" Offset="0.476"/>
+                    <GradientStop Color="#FFE51313" Offset="0.745"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="13">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-35.302"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="14">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-95.916"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="15">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-95.916"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="16">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-316.31"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF990707"/>
+                    <GradientStop Color="#FFFC2A2A" Offset="1"/>
+                    <GradientStop Color="#FFB00808" Offset="0.263"/>
+                    <GradientStop Color="#FFDD0F0F" Offset="0.476"/>
+                    <GradientStop Color="#FFE51313" Offset="0.745"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="17">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-212.9"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF990707"/>
+                    <GradientStop Color="#FFFC2A2A" Offset="1"/>
+                    <GradientStop Color="#FFB00808" Offset="0.263"/>
+                    <GradientStop Color="#FFDD0F0F" Offset="0.476"/>
+                    <GradientStop Color="#FFE51313" Offset="0.745"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="18">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-243.117"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF990707"/>
+                    <GradientStop Color="#FFFC2A2A" Offset="1"/>
+                    <GradientStop Color="#FFB00808" Offset="0.263"/>
+                    <GradientStop Color="#FFDD0F0F" Offset="0.476"/>
+                    <GradientStop Color="#FFE51313" Offset="0.745"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="19">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-41.424"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="20">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-130.83"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="21">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-39.803"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Rectangle}" x:Key="22">
+        <Setter Property="Rectangle.RenderTransform">
+            <Setter.Value>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-132.361"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Rectangle.Fill">
+            <Setter.Value>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF1948B6" Offset="1"/>
+                    <GradientStop Color="#FF4CF6F3" Offset="0"/>
+                    <GradientStop Color="#FF2BC7ED" Offset="0.372"/>
+                    <GradientStop Color="#FE245ADA" Offset="0.686"/>
+                    <GradientStop Color="#FE19A3EB" Offset="0.521"/>
+                </RadialGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
